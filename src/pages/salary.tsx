@@ -105,7 +105,7 @@ const Salary: React.FC = () => {
             {showGajiPokok && (
               <div className="mt-3">
                 <p>
-                  Gaji Kotor <span className="ml-4">:</span> Rp.{gajiKotor}
+                  Gaji Kotor <span className="ml-2">:</span> Rp.{gajiKotor}
                 </p>
                 <p>
                   Gaji Bersih <span className="ml-2">:</span> Rp.{gajiBersih}
