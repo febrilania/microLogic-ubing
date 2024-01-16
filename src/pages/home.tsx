@@ -1,10 +1,10 @@
 import SalaryCard from "../components/cards/salaryCard";
-import Navbar from "../components/navbar";
+import DasNav from "../components/dashnav";
 
 const Home: React.FC = () => {
   return (
     <>
-      <Navbar />
+      <DasNav />
       <SalaryCard />
     </>
   );

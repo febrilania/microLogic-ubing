@@ -11,6 +11,7 @@ const Salary: React.FC = () => {
   const [kewajiban, setKewajiban] = useState<string>(initialKewajiban);
   const [gajiKotor, setGajiKotor] = useState<number | null>(null);
   const [gajiBersih, setGajiBersih] = useState<number | null>(null);
+  const [showGajiPokok, setShowGajiPokok] = useState<boolean>(false);
 
   const calcGaji = () => {
     const gajiPokokNumber = parseFloat(gajiPokok) || 0;
@@ -22,6 +23,7 @@ const Salary: React.FC = () => {
 
     setGajiKotor(gajiKotorResult);
     setGajiBersih(gajiBersihResult);
+    setShowGajiPokok(true);
   };
 
   const resetValues = () => {
@@ -30,6 +32,7 @@ const Salary: React.FC = () => {
     setKewajiban(initialKewajiban);
     setGajiKotor(null);
     setGajiBersih(null);
+    setShowGajiPokok(false);
   };
 
   return (
@@ -99,14 +102,19 @@ const Salary: React.FC = () => {
                 Reset
               </button>
             </div>
-            <div className="mt-3">
-              <p>
-                Gaji Kotor <span className="ml-4">:</span> Rp.{gajiKotor}
-              </p>
-              <p>
-                Gaji Bersih <span className="ml-2">:</span> Rp.{gajiBersih}
-              </p>
-            </div>
+            {showGajiPokok && (
+              <div className="mt-3">
+                <p>
+                  Gaji Kotor <span className="ml-4">:</span> Rp.{gajiKotor}
+                </p>
+                <p>
+                  Gaji Bersih <span className="ml-2">:</span> Rp.{gajiBersih}
+                </p>
+                <p>
+                  Gaji Pokok <span className="ml-2">:</span> Rp.{gajiPokok}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
