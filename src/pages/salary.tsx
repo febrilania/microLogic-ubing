@@ -39,7 +39,7 @@ const Salary: React.FC = () => {
     <>
       <Navbar />
       <div className="font-poppins">
-        <div className="bg-purple-200 w-96 p-6 rounded-md shadow-sm shadow-purple-800 text-purple-800 mx-auto my-5">
+        <div className="bg-purple-200 w-full md:w-96 p-6 rounded-md shadow-sm shadow-purple-800 text-purple-800 mx-auto my-5">
           <h1 className="mb-4 text-center text-xl font-semibold">
             KALKULATOR GAJI
           </h1>
@@ -105,7 +105,7 @@ const Salary: React.FC = () => {
           </div>
         </div>
         {showGajiPokok && (
-          <div className="bg-purple-200 w-96 mx-auto rounded-md p-2 shadow-sm shadow-purple-800 text-purple-800">
+          <div className="bg-purple-200 w-full md:w-96 mx-auto rounded-md p-2 shadow-sm shadow-purple-800 text-purple-800">
             <table className="table-fixed w-full border-separate border-spacing-y-1 ">
               <tr>
                 <td className="font-semibold w-24">Gaji Pokok</td>
