@@ -1,4 +1,10 @@
+import CountdownCard from "../components/cards/countdownCard";
+import CurrencyCard from "../components/cards/currencyCard";
+import MatchingCard from "../components/cards/matchingCard";
+import MlCard from "../components/cards/mlCard";
 import SalaryCard from "../components/cards/salaryCard";
+import TictacCard from "../components/cards/tictacCard";
+import WordscrambCard from "../components/cards/wordscrumbCard";
 import DasNav from "../components/dashnav";
 
 const Home: React.FC = () => {
@@ -6,6 +12,12 @@ const Home: React.FC = () => {
     <>
       <DasNav />
       <SalaryCard />
+      <TictacCard />
+      <WordscrambCard />
+      <MatchingCard />
+      <MlCard />
+      <CurrencyCard />
+      <CountdownCard />
     </>
   );
 };

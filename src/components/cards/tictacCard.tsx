@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-const SalaryCard: React.FC = () => {
+const TictacCard: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -16,10 +16,10 @@ const SalaryCard: React.FC = () => {
           : "opacity-0 translate-y-5"
       }`}
     >
-      <Link to="/salary">
+      <Link to="/tictactoe">
         <div className="bg-purple-900 p-5 w-1/2 mx-auto my-10 rounded-md hover:bg-purple-500">
           <h1 className="font-bold text-center text-xl text-white">
-            SALARY CALCULATION
+            TIC TAC TOE CHALLANGE
           </h1>
         </div>
       </Link>
@@ -27,4 +27,4 @@ const SalaryCard: React.FC = () => {
   );
 };
 
-export default SalaryCard;
+export default TictacCard;

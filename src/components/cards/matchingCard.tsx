@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { IoMdLock } from "react-icons/io";
 
-const SalaryCard: React.FC = () => {
+const MatchingCard: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -16,15 +17,16 @@ const SalaryCard: React.FC = () => {
           : "opacity-0 translate-y-5"
       }`}
     >
-      <Link to="/salary">
-        <div className="bg-purple-900 p-5 w-1/2 mx-auto my-10 rounded-md hover:bg-purple-500">
+      <Link to="">
+        <div className="bg-gray-800 p-5 w-1/2 mx-auto my-10 rounded-md flex items-center justify-center">
           <h1 className="font-bold text-center text-xl text-white">
-            SALARY CALCULATION
+            MATCHING CARD
           </h1>
+          <IoMdLock className="w-8 h-8 ml-2 text-white" />
         </div>
       </Link>
     </div>
   );
 };
 
-export default SalaryCard;
+export default MatchingCard;
