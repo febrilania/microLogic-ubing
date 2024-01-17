@@ -11,13 +11,15 @@ const Home: React.FC = () => {
   return (
     <>
       <DasNav />
-      <SalaryCard />
-      <TictacCard />
-      <WordscrambCard />
-      <MatchingCard />
-      <MlCard />
-      <CurrencyCard />
-      <CountdownCard />
+      <div className="px-5">
+        <SalaryCard />
+        <TictacCard />
+        <WordscrambCard />
+        <MatchingCard />
+        <MlCard />
+        <CurrencyCard />
+        <CountdownCard />
+      </div>
     </>
   );
 };

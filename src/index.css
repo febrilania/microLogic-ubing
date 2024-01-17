@@ -1,7 +1,6 @@
+/* tailwind.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-poppins;
-}
+/* Pindahkan @import untuk font Poppins ke bagian paling atas setelah @tailwind directives */

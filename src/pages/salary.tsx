@@ -38,7 +38,7 @@ const Salary: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="font-poppins">
+      <div className="font-poppins px-5">
         <div className="bg-purple-200 w-full md:w-96 p-6 rounded-md shadow-sm shadow-purple-800 text-purple-800 mx-auto my-5">
           <h1 className="mb-4 text-center text-xl font-semibold">
             KALKULATOR GAJI
