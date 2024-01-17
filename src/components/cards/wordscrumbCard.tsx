@@ -17,7 +17,7 @@ const WordscrambCard: React.FC = () => {
       }`}
     >
       <Link to="/wordscramb">
-        <div className="bg-purple-900 hover:bg-purple-500 p-5 w-full md:w-1/2 mx-auto my-10 rounded-md flex items-center justify-center">
+        <div className="bg-purple-900 hover:bg-purple-500 p-5 w-full md:w-1/2 mx-auto my-10 rounded-md flex items-center justify-center border border-purple-600 shadow-md shadow-purple-900">
           <h1 className="font-bold text-center text-xl text-white">
             WORD SCRAMB
           </h1>

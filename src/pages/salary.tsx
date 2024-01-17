@@ -39,13 +39,13 @@ const Salary: React.FC = () => {
     <>
       <Navbar />
       <div className="font-poppins px-5">
-        <div className="bg-purple-200 w-full md:w-96 p-6 rounded-md shadow-sm shadow-purple-800 text-purple-800 mx-auto my-5">
+        <div className="bg-purple-200 w-full md:w-96 p-6 rounded-md shadow-md shadow-purple-900 text-purple-900 border border-purple-900 mx-auto my-5">
           <h1 className="mb-4 text-center text-xl font-semibold">
-            KALKULATOR GAJI
+            SALARY CALCULATION
           </h1>
           <div className="card-body flex flex-col gap-2">
             <div className="flex flex-col">
-              <label htmlFor="gajiPokok" className="text-lg font-semibold">
+              <label htmlFor="gajiPokok" className="text-lg font-medium">
                 Gaji Pokok
               </label>
               <input
@@ -59,7 +59,7 @@ const Salary: React.FC = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="tunjangan" className="text-lg font-semibold">
+              <label htmlFor="tunjangan" className="text-lg font-medium">
                 Tunjangan
               </label>
               <input
@@ -73,7 +73,7 @@ const Salary: React.FC = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="kewajiban" className="text-lg font-semibold">
+              <label htmlFor="kewajiban" className="text-lg font-medium">
                 Kewajiban
               </label>
               <input
@@ -89,14 +89,14 @@ const Salary: React.FC = () => {
             <div className="flex justify-center">
               <button
                 type="button"
-                className="bg-purple-800 font-semibold text-white py-2 px-4 rounded-md m-3 w-32 hover:bg-purple-500"
+                className="bg-purple-900 font-semibold text-white py-2 px-4 rounded-md m-3 w-32 hover:bg-purple-500"
                 onClick={calcGaji}
               >
-                Hitung Gaji
+                Calculate
               </button>
               <button
                 type="button"
-                className="bg-white font-semibold text-purple-800 py-2 px-4 rounded-md m-3 w-32 hover:bg-purple-500 hover:text-white"
+                className="bg-white font-semibold text-purple-900 py-2 px-4 rounded-md m-3 w-32 hover:bg-purple-500 hover:text-white"
                 onClick={resetValues}
               >
                 Reset
@@ -105,7 +105,7 @@ const Salary: React.FC = () => {
           </div>
         </div>
         {showGajiPokok && (
-          <div className="bg-purple-200 w-full md:w-96 mx-auto rounded-md p-2 shadow-sm shadow-purple-800 text-purple-800">
+          <div className="bg-purple-200 w-full md:w-96 mx-auto rounded-md p-2 shadow-md shadow-purple-900 text-purple-900 border border-purple-900">
             <table className="table-fixed w-full border-separate border-spacing-y-1 ">
               <tr>
                 <td className="font-semibold w-24">Gaji Pokok</td>

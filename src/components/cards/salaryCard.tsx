@@ -17,7 +17,7 @@ const SalaryCard: React.FC = () => {
       }`}
     >
       <Link to="/salary">
-        <div className="bg-purple-900 p-5  w-full md:w-1/2 mx-auto my-10 rounded-md hover:bg-purple-500">
+        <div className="bg-purple-900 p-5  w-full md:w-1/2 mx-auto my-10 rounded-md hover:bg-purple-500 border border-purple-600 shadow-md shadow-purple-900">
           <h1 className="font-bold text-center text-xl text-white">
             SALARY CALCULATION
           </h1>

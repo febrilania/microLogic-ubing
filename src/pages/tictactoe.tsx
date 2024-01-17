@@ -40,7 +40,7 @@ const Tictactoe: React.FC = () => {
       <h1 className="text-2xl font-bold text-center mt-5 text-purple-900 font-poppins">
         TIC TAC TOE
       </h1>
-      <div className="w-64 p-5 shadow-md shadow-purple-900 rounded-sm border border-purple-900 mx-auto mt-5 font-poppins">
+      <div className="w-64 p-5 shadow-md bg-purple-200 shadow-purple-900 rounded-md border border-purple-900 mx-auto mt-5 font-poppins">
         <div className="grid grid-cols-3 gap-3">
           <div className="text-purple-900 col-span-3 text-center text-xl font-bold mb-2 mx-auto">
             {status}

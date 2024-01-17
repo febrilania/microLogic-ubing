@@ -80,25 +80,25 @@ const WordScramb: React.FC = () => {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 my-2">
             <button
-              className="w-full py-2 px-2 font-medium bg-purple-900 text-white rounded-md hover:bg-purple-500"
+              className="w-full py-2 px-2 font-semibold bg-purple-900 text-white rounded-md hover:bg-purple-500"
               onClick={resetGame}
             >
               Reset
             </button>
             <button
-              className="w-full py-2 px-2 font-medium bg-purple-900 text-white rounded-md hover:bg-purple-500"
+              className="w-full py-2 px-2 font-semibold bg-purple-900 text-white rounded-md hover:bg-purple-500"
               onClick={checkAnswer}
             >
               Check
             </button>
             <button
-              className="w-full py-2 px-2 font-medium bg-purple-900 text-white rounded-md hover:bg-purple-500"
+              className="w-full py-2 px-2 font-semibold bg-purple-900 text-white rounded-md hover:bg-purple-500"
               onClick={shuffleWord}
             >
               Next
             </button>
           </div>
-          <h1 className="text-md font-normal text-purple-900">
+          <h1 className="text-md font-medium text-purple-900">
             Your Score : {score}
           </h1>
         </div>
