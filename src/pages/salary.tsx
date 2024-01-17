@@ -38,19 +38,19 @@ const Salary: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen flex items-center justify-center -mt-14 font-poppins ">
-        <div className="bg-purple-200 w-96 p-6 rounded-md shadow-sm shadow-purple-800 text-purple-800">
+      <div className="font-poppins">
+        <div className="bg-purple-200 w-96 p-6 rounded-md shadow-sm shadow-purple-800 text-purple-800 mx-auto my-5">
           <h1 className="mb-4 text-center text-xl font-semibold">
             KALKULATOR GAJI
           </h1>
-          <div className="card-body">
-            <div className="mb-4">
-              <label htmlFor="gajiPokok" className="text-lg font-semibold mr-3">
+          <div className="card-body flex flex-col gap-2">
+            <div className="flex flex-col">
+              <label htmlFor="gajiPokok" className="text-lg font-semibold">
                 Gaji Pokok
               </label>
               <input
                 type="number"
-                className="form-input my-2 rounded-md p-2 font-semibold "
+                className="form-input rounded-md p-2 font-semibold "
                 id="gajiPokok"
                 value={gajiPokok}
                 onChange={(e) =>
@@ -58,13 +58,13 @@ const Salary: React.FC = () => {
                 }
               />
             </div>
-            <div className="mb-4">
-              <label htmlFor="tunjangan" className="text-lg font-semibold mr-4">
+            <div className="flex flex-col">
+              <label htmlFor="tunjangan" className="text-lg font-semibold">
                 Tunjangan
               </label>
               <input
                 type="number"
-                className="form-input my-2 rounded-md p-2 font-semibold"
+                className="form-input rounded-md p-2 font-semibold"
                 id="tunjangan"
                 value={tunjangan}
                 onChange={(e) =>
@@ -72,13 +72,13 @@ const Salary: React.FC = () => {
                 }
               />
             </div>
-            <div className="mb-4">
-              <label htmlFor="kewajiban" className="text-lg font-semibold mr-4">
+            <div className="flex flex-col">
+              <label htmlFor="kewajiban" className="text-lg font-semibold">
                 Kewajiban
               </label>
               <input
                 type="number"
-                className="form-input my-2 rounded-md p-2 font-semibold"
+                className="form-input rounded-md p-2 font-semibold"
                 id="kewajiban"
                 value={kewajiban}
                 onChange={(e) =>
@@ -104,35 +104,34 @@ const Salary: React.FC = () => {
             </div>
           </div>
         </div>
+        {showGajiPokok && (
+          <div className="bg-purple-200 w-96 mx-auto rounded-md p-2 shadow-sm shadow-purple-800 text-purple-800">
+            <table className="table-fixed w-full border-separate border-spacing-y-1 ">
+              <tr>
+                <td className="font-semibold w-24">Gaji Pokok</td>
+                <td className="font-semibold w-5 text-center">:</td>
+                <td className="font-semibold bg-white px-2 rounded-md">
+                  Rp.{gajiPokok}
+                </td>
+              </tr>
+              <tr>
+                <td className="font-semibold">Gaji Bersih</td>
+                <td className="font-semibold w-5 text-center">:</td>
+                <td className="font-semibold bg-white px-2 rounded-md">
+                  Rp.{gajiBersih}
+                </td>
+              </tr>
+              <tr>
+                <td className="font-semibold">Gaji Kotor</td>
+                <td className="font-semibold w-5 text-center">:</td>
+                <td className="font-semibold bg-white px-2 rounded-md">
+                  Rp.{gajiKotor}
+                </td>
+              </tr>
+            </table>
+          </div>
+        )}
       </div>
-
-      {showGajiPokok && (
-        <div className="-mt-20 flex justify-center bg-purple-200 mb-5 w-96 mx-auto rounded-md py-2">
-          <table className="table-fixed w-72 border-separate border-spacing-y-1">
-            <tr>
-              <td className="font-semibold">Gaji Pokok</td>
-              <td className="font-semibold w-5 text-center">:</td>
-              <td className="font-semibold bg-white px-2 rounded-md">
-                Rp.{gajiPokok}
-              </td>
-            </tr>
-            <tr>
-              <td className="font-semibold">Gaji Bersih</td>
-              <td className="font-semibold w-5 text-center">:</td>
-              <td className="font-semibold bg-white px-2 rounded-md">
-                Rp.{gajiBersih}
-              </td>
-            </tr>
-            <tr>
-              <td className="font-semibold">Gaji Kotor</td>
-              <td className="font-semibold w-5 text-center">:</td>
-              <td className="font-semibold bg-white px-2 rounded-md">
-                Rp.{gajiKotor}
-              </td>
-            </tr>
-          </table>
-        </div>
-      )}
     </>
   );
 };
