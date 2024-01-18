@@ -31,18 +31,18 @@ const Tictactoe: React.FC = () => {
 
   const winner = calculateWinner(squares);
   const status = winner
-    ? `Winner: ${winner}`
-    : `NEXT PLAYER : ${xIsNext ? "X" : "O"}`;
+    ? `Winner : ${winner}`
+    : `Next Player : ${xIsNext ? "X" : "O"}`;
 
   return (
     <>
       <Navbar />
-      <h1 className="text-2xl font-bold text-center mt-5 text-purple-900 font-poppins">
+      <h1 className="text-lg font-medium text-center mt-5 text-white">
         TIC TAC TOE
       </h1>
-      <div className="w-64 p-5 shadow-md bg-purple-200 shadow-purple-900 rounded-md border border-purple-900 mx-auto mt-5 font-poppins">
+      <div className="w-64 p-5 shadow-md bg-violet-800  mx-auto mt-5">
         <div className="grid grid-cols-3 gap-3">
-          <div className="text-purple-900 col-span-3 text-center text-xl font-bold mb-2 mx-auto">
+          <div className="text-white col-span-3 text-center text-md font-normal mb-2 mx-auto">
             {status}
           </div>
           {Array.from({ length: 9 }).map((_, index) => (
@@ -52,7 +52,7 @@ const Tictactoe: React.FC = () => {
           ))}
         </div>
         <button
-          className="bg-purple-900 text-white py-2 px-9 mt-5 text-center rounded hover:bg-purple-500 font-bold"
+          className="bg-violet-950 text-white py-2 px-9 mt-5 text-center rounded hover:bg-violet-500 font-normal"
           onClick={handleReset}
         >
           Reset

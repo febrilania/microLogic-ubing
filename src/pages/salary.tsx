@@ -39,18 +39,18 @@ const Salary: React.FC = () => {
     <>
       <Navbar />
       <div className="font-poppins px-5">
-        <div className="bg-purple-200 w-full md:w-96 p-6 rounded-md shadow-md shadow-purple-900 text-purple-900 border border-purple-900 mx-auto my-5">
-          <h1 className="mb-4 text-center text-xl font-semibold">
+        <div className="bg-violet-800 w-full md:w-96 p-6 rounded-md text-white mx-auto mt-10 mb-5">
+          <h1 className="mb-4 text-center text-xl font-medium">
             SALARY CALCULATION
           </h1>
           <div className="card-body flex flex-col gap-2">
             <div className="flex flex-col">
-              <label htmlFor="gajiPokok" className="text-lg font-medium">
-                Gaji Pokok
+              <label htmlFor="gajiPokok" className="text-md font-normal">
+                Salary
               </label>
               <input
                 type="number"
-                className="form-input rounded-md p-2 font-semibold "
+                className="form-input rounded-md p-2 font-normal text-violet-950"
                 id="gajiPokok"
                 value={gajiPokok}
                 onChange={(e) =>
@@ -59,12 +59,12 @@ const Salary: React.FC = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="tunjangan" className="text-lg font-medium">
-                Tunjangan
+              <label htmlFor="tunjangan" className="text-md font-normal">
+                Incentives
               </label>
               <input
                 type="number"
-                className="form-input rounded-md p-2 font-semibold"
+                className="form-input rounded-md p-2 font-normal text-violet-950"
                 id="tunjangan"
                 value={tunjangan}
                 onChange={(e) =>
@@ -73,12 +73,12 @@ const Salary: React.FC = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="kewajiban" className="text-lg font-medium">
-                Kewajiban
+              <label htmlFor="kewajiban" className="text-md font-normal">
+                Tax
               </label>
               <input
                 type="number"
-                className="form-input rounded-md p-2 font-semibold"
+                className="form-input rounded-md p-2 font-normal text-violet-950"
                 id="kewajiban"
                 value={kewajiban}
                 onChange={(e) =>
@@ -89,14 +89,14 @@ const Salary: React.FC = () => {
             <div className="flex justify-center">
               <button
                 type="button"
-                className="bg-purple-900 font-semibold text-white py-2 px-4 rounded-md m-3 w-32 hover:bg-purple-500"
+                className="bg-violet-950 font-normal text-white py-2 px-4 rounded-md m-3 w-32 hover:bg-violet-500"
                 onClick={calcGaji}
               >
                 Calculate
               </button>
               <button
                 type="button"
-                className="bg-white font-semibold text-purple-900 py-2 px-4 rounded-md m-3 w-32 hover:bg-purple-500 hover:text-white"
+                className="bg-white font-normal text-violet-950 py-2 px-4 rounded-md m-3 w-32 hover:bg-violet-500 hover:text-white"
                 onClick={resetValues}
               >
                 Reset
@@ -105,26 +105,26 @@ const Salary: React.FC = () => {
           </div>
         </div>
         {showGajiPokok && (
-          <div className="bg-purple-200 w-full md:w-96 mx-auto rounded-md p-2 shadow-md shadow-purple-900 text-purple-900 border border-purple-900">
+          <div className="bg-white w-full md:w-96 mx-auto rounded-md p-2 text-violet-950">
             <table className="table-fixed w-full border-separate border-spacing-y-1 ">
               <tr>
-                <td className="font-semibold w-24">Gaji Pokok</td>
-                <td className="font-semibold w-5 text-center">:</td>
-                <td className="font-semibold bg-white px-2 rounded-md">
+                <td className="font-normal w-24">Gaji Pokok</td>
+                <td className="font-normal w-5 text-center">:</td>
+                <td className="font-normal bg-violet-950 text-white px-2 rounded-sm">
                   Rp.{gajiPokok}
                 </td>
               </tr>
               <tr>
-                <td className="font-semibold">Gaji Bersih</td>
-                <td className="font-semibold w-5 text-center">:</td>
-                <td className="font-semibold bg-white px-2 rounded-md">
+                <td className="font-normal">Gaji Bersih</td>
+                <td className="font-normal w-5 text-center">:</td>
+                <td className="font-normal bg-violet-950 text-white px-2 rounded-sm">
                   Rp.{gajiBersih}
                 </td>
               </tr>
               <tr>
-                <td className="font-semibold">Gaji Kotor</td>
-                <td className="font-semibold w-5 text-center">:</td>
-                <td className="font-semibold bg-white px-2 rounded-md">
+                <td className="font-normal">Gaji Kotor</td>
+                <td className="font-normal w-5 text-center">:</td>
+                <td className="font-normal bg-violet-950 text-white px-2 rounded-sm">
                   Rp.{gajiKotor}
                 </td>
               </tr>

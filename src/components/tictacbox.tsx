@@ -8,7 +8,7 @@ interface TicTacBoxProps {
 
 const TictacBox: React.FC<TicTacBoxProps> = ({ value, onClick }) => (
   <button
-    className="w-16 h-16 border bg-white shadow-sm shadow-purple-900 p-2 border-purple-900"
+    className="w-16 h-16 border bg-white p-2 text-violet-950 "
     onClick={onClick}
   >
     {value}

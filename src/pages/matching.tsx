@@ -117,14 +117,14 @@ const Matching: React.FC = () => {
     <>
       <Navbar />
       <div className="p-5">
-        <h1 className="text-xl font-bold font-poppins text-center text-purple-900 my-5">
+        <h1 className="text-xl font-medium font-poppins text-center text-white my-5">
           MATCHING CARD
         </h1>
-        <div className="mx-auto w-full p-5 md:w-1/2 grid grid-cols-4 gap-2 justify-items-center bg-purple-200 shadow-md shadow-purple-900 border border-purple-900">
+        <div className="mx-auto w-full px-2 py-6 md:w-1/2 grid grid-cols-4 gap-2 justify-items-center bg-violet-800">
           {animalCards.map((card) => (
             <div
               key={card.id}
-              className={`md:w-20 md:h-20 w-14 h-14 border border-purple-900 bg-white flex items-center cursor-pointer`}
+              className={`md:w-20 md:h-20 w-14 h-14 bg-white flex items-center cursor-pointer`}
               onClick={() => handleCardClick(card.id)}
             >
               {card.isFlipped ? (
@@ -140,9 +140,11 @@ const Matching: React.FC = () => {
           ))}
         </div>
         <div className="text-center mt-4">
-          <p>Matched Pairs: {matchedPairs}</p>
+          <h1 className="text-white text-md font-normal">
+            Matched Pairs: {matchedPairs}
+          </h1>
           <button
-            className="bg-purple-500 rounded-md text-white p-2 my-2 ml-2"
+            className="bg-violet-800 hover:bg-violet-500 rounded-md text-white px-5 py-2 my-2 ml-2"
             onClick={resetGame}
           >
             Reset Game

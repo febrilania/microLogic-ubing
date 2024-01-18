@@ -4,3 +4,6 @@
 @tailwind utilities;
 
 /* Pindahkan @import untuk font Poppins ke bagian paling atas setelah @tailwind directives */
+body {
+  @apply bg-violet-950;
+}

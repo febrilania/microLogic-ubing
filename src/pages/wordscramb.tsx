@@ -60,17 +60,13 @@ const WordScramb: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full flex-col font-poppins text-center px-5">
-        <h1 className="text-xl font-bold text-purple-900 text-center my-5">
+      <div className="w-full flex-col text-center px-5">
+        <h1 className="text-lg font-medium text-white text-center my-5">
           WORD SCRAMBLE
         </h1>
-        <div className="card md:w-1/3 sm:w-full bg-purple-200 mx-auto p-2 border border-purple-900 shadow-md shadow-purple-900 rounded-md">
-          <h1 className="text-lg font-medium text-purple-900">
-            Kata yang diacak :
-          </h1>
-          <h1 className="text-sm font-thin text-purple-900 italic">
-            {scrambledWord}
-          </h1>
+        <div className="card md:w-1/3 sm:w-full bg-violet-800 text-white mx-auto p-5 rounded-md">
+          <h1 className="text-md font-normal">Kata yang diacak :</h1>
+          <h1 className="text-sm font-normal italic">{scrambledWord}</h1>
           <input
             type="text"
             className="py-2 px-3 rounded-md my-2 w-full text-center"
@@ -80,25 +76,25 @@ const WordScramb: React.FC = () => {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 my-2">
             <button
-              className="w-full py-2 px-2 font-semibold bg-purple-900 text-white rounded-md hover:bg-purple-500"
+              className="w-full py-2 px-2 font-normal bg-violet-950 text-white rounded-md hover:bg-violet-500"
               onClick={resetGame}
             >
               Reset
             </button>
             <button
-              className="w-full py-2 px-2 font-semibold bg-purple-900 text-white rounded-md hover:bg-purple-500"
+              className="w-full py-2 px-2 font-normal bg-violet-950 text-white rounded-md hover:bg-violet-500"
               onClick={checkAnswer}
             >
               Check
             </button>
             <button
-              className="w-full py-2 px-2 font-semibold bg-purple-900 text-white rounded-md hover:bg-purple-500"
+              className="w-full py-2 px-2 font-normal bg-violet-950 text-white rounded-md hover:bg-violet-500"
               onClick={shuffleWord}
             >
               Next
             </button>
           </div>
-          <h1 className="text-md font-medium text-purple-900">
+          <h1 className="text-md font-normal text-white">
             Your Score : {score}
           </h1>
         </div>
