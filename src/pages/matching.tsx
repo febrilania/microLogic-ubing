@@ -151,7 +151,7 @@ const Matching: React.FC = () => {
           {animalCards.map((card) => (
             <div
               key={card.id}
-              className={`w-20 h-20 border border-purple-900 bg-white flex items-center cursor-pointer`}
+              className={`w-20 h-20 md:w-24 md:h-24 border border-purple-900 bg-white flex items-center cursor-pointer`}
               onClick={() => handleCardClick(card.id)}
             >
               {card.isFlipped ? (
