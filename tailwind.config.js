@@ -9,4 +9,5 @@ export default {
     },
   },
   plugins: [],
+  mode: "jit",
 };
