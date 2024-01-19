@@ -77,7 +77,7 @@ const Currency: React.FC = () => {
                 type="number"
                 value={amount}
                 onChange={handleAmountChange}
-                className="w-full h-10 rounded-md px-2"
+                className="w-full h-10 rounded-md px-2 text-violet-950"
               />
 
               {/* Pilihan Mata Uang Asal */}
@@ -85,7 +85,7 @@ const Currency: React.FC = () => {
                 <select
                   value={fromCurrency}
                   onChange={handleFromCurrencyChange}
-                  className="h-10 w-full md:w-16 rounded-md"
+                  className="h-10 w-full md:w-16 rounded-md text-violet-950"
                 >
                   <option value="IDR">IDR</option>
                   <option value="USD">USD</option>
@@ -102,7 +102,7 @@ const Currency: React.FC = () => {
                 <select
                   value={toCurrency}
                   onChange={handleToCurrencyChange}
-                  className="h-10 w-full md:w-16 rounded-md"
+                  className="h-10 w-full md:w-16 rounded-md text-violet-950"
                 >
                   <option value="IDR">IDR</option>
                   <option value="USD">USD</option>
@@ -122,7 +122,7 @@ const Currency: React.FC = () => {
 
             {/* Menampilkan Hasil Konversi */}
             <div className="hasil flex mt-2 md:mt-4">
-              <h1 className="rounded-md w-full md:w-full bg-white py-2 px-2 text-md font-normal">
+              <h1 className="rounded-md w-full md:w-full bg-white py-2 px-2 text-md font-normal text-violet-950">
                 {" "}
                 {convertedAmount !== null
                   ? convertedAmount.toFixed(2)

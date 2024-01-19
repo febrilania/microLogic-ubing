@@ -69,7 +69,7 @@ const WordScramb: React.FC = () => {
           <h1 className="text-sm font-normal italic">{scrambledWord}</h1>
           <input
             type="text"
-            className="py-2 px-3 rounded-md my-2 w-full text-center"
+            className="py-2 px-3 rounded-md my-2 w-full text-center text-violet-950"
             placeholder="Your Answer"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
