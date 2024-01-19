@@ -5,6 +5,7 @@ import "animate.css";
 import Tictactoe from "./pages/tictactoe";
 import WordScramb from "./pages/wordscramb";
 import Matching from "./pages/matching";
+import Currency from "./pages/currency";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Route path="/tictactoe" element={<Tictactoe />}></Route>
         <Route path="/wordscramb" element={<WordScramb />}></Route>
         <Route path="/matching" element={<Matching />}></Route>
+        <Route path="/currency" element={<Currency />}></Route>
       </Routes>
     </Router>
   );

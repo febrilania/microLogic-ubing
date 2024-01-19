@@ -16,8 +16,8 @@ const Home: React.FC = () => {
         <TictacCard />
         <WordscrambCard />
         <MatchingCard />
-        <MlCard />
         <CurrencyCard />
+        <MlCard />
         <CountdownCard />
       </div>
     </>

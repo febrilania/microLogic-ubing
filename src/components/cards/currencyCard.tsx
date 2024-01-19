@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { IoMdLock } from "react-icons/io";
 
 const CurrencyCard: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -17,12 +16,11 @@ const CurrencyCard: React.FC = () => {
           : "opacity-0 translate-y-5"
       }`}
     >
-      <Link to="">
-        <div className="bg-gray-800 p-5 w-full md:w-1/2 mx-auto my-10 rounded-md flex items-center justify-center">
-          <h1 className="font-bold text-center text-xl text-white">
+      <Link to="/currency">
+        <div className="bg-violet-800 hover:bg-violet-700 p-5 w-full md:w-1/2 mx-auto my-10 rounded-md flex items-center justify-center">
+          <h1 className="font-medium text-center text-xl text-white">
             CURRENCY CONVERT
           </h1>
-          <IoMdLock className="w-8 h-8 ml-2 text-white" />
         </div>
       </Link>
     </div>
