@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { format, parseISO, differenceInSeconds } from "date-fns";
+import { parseISO, differenceInSeconds } from "date-fns";
 import Navbar from "../components/navbar";
 
 const CountDownDuration: React.FC = () => {
