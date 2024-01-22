@@ -6,6 +6,8 @@ import Tictactoe from "./pages/tictactoe";
 import WordScramb from "./pages/wordscramb";
 import Matching from "./pages/matching";
 import Currency from "./pages/currency";
+import ML from "./pages/ml";
+import CountDownDuration from "./pages/countdownduration";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +19,8 @@ const App: React.FC = () => {
         <Route path="/wordscramb" element={<WordScramb />}></Route>
         <Route path="/matching" element={<Matching />}></Route>
         <Route path="/currency" element={<Currency />}></Route>
+        <Route path="/ml" element={<ML />}></Route>
+        <Route path="/count" element={<CountDownDuration />}></Route>
       </Routes>
     </Router>
   );
